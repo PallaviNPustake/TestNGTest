@@ -19,8 +19,7 @@ public class Base {
 		driver.get("https://www.buildabear.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-		Reporter.log("Launched Build-A-Bear application", true);
-		
+		Reporter.log("Launched Build-A-Bear application", true);		
 	}
 	public void closeBrowser() {
 		driver.quit();
